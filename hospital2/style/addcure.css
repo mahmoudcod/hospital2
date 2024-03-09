@@ -1,0 +1,125 @@
+/* Reset default styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/shutterstock_297132446.jpg');
+    background-size: cover;
+        background-repeat: no-repeat;
+}
+
+/* Global styling for a clean and modern look */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Container for a centered and responsive layout */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading style for a centered and visually appealing design */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Form layout for better readability and user interaction */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label styling for improved form field association */
+label {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* Input styling for a clean and consistent appearance */
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#cureType {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Button styling for a prominent call-to-action */
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 3px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#deleteButton {
+    background-color: red;
+}
+
+/* Hover effect for an interactive button experience */
+button:hover {
+    background-color: #0056b3;
+}
+
+#deleteButton:hover {
+    background-color: darkred;
+}
+
+/* Table styling for a clean and organized presentation */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Table cell styling for better readability */
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Alternate background color for improved row visibility */
+th {
+    background-color: #f2f2f2;
+}
+
+/* Hover effect for better user feedback on table rows */
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Styling for selected rows for better visual recognition */
+tr.selected {
+    background-color: #ffc107;
+    color: #333;
+}
+.deleteButton{
+    background-color: red;
+}

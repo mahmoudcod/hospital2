@@ -1,0 +1,137 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    padding-top: 12px;
+    text-align: center;
+    color: #333;
+}
+@media print {
+    h1 {
+        font-size: 5px;
+        padding-top:0px;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.patient-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    margin: 30px;
+}
+@media print {
+    .patient-details {
+        padding: 15px;
+        margin: 15px;
+        font-size: 5px;
+    }
+}
+
+.left-column {
+    width: 48%;
+}
+
+/* Updated small-bold styles */
+
+p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+p span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+}
+@media print {
+    p span,p {
+        font-size: 10px;
+    }
+}
+
+
+/* Improved table styles */
+.selected {
+    background-color: lightsteelblue;
+}
+
+/* Define styles for not-selected rows */
+.not-selected {
+    background-color: lightgray;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+@media print {
+    table {
+        margin-top: 7px;
+    }
+}
+
+th,
+td {
+    padding: 12px;
+    /* Increased padding for better spacing */
+    text-align: center;
+}
+
+th {
+    background-color: gray;
+}
+@media print {
+    .container {
+        max-width: 100%;
+        box-shadow:none;
+        border: 8px;
+        height: auto;
+        background-color: white;
+        width: 90%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: 10px;
+        padding: 10px;
+        font-size: 10px;
+        Line-height: 5px;
+    }
+}
+
+
+button {
+    width: 10%;
+    padding: 10px;
+    margin: 3px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#red{
+    background-color: red;
+}
+
+#devices{
+    display: flex;
+}

@@ -1,0 +1,44 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ادخال مستلزمات</title>
+    <link rel="stylesheet" href="../style/addcure.css" />
+    <link rel="stylesheet" href="../style/home.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="addcure.html" id="inputSupplies">ادخال مستلزمات</a></li>
+          <li><a href="print.html" id="finishProcess">بدء العملية</a></li>
+          <li><a href="veiw.html" id="track">بحث</a></li>
+           <li><a href="logs.html" id="track">ادوية اليوم</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="">
+        <h1>ادخال مستلزمات</h1>
+        <label for="cureName">اسم الدواء:</label>
+        <input type="text" id="cureName" placeholder="Enter cure name" required/>
+        <input type="number" id="cureQuantty" placeholder="Enter cure quantty" required/>
+
+        <label for="cureType">نوع الدواء</label>
+        <select id="cureType" required>
+          <option selected disabled value="المستلزمات">المستلزمات</option>
+          <option value="الخيوط">الخيوط</option>
+          <option value="ادوية ومحاليل">ادوية ومحاليل</option>
+          <option value="ادوية التخدير">ادوية التخدير</option>
+          <option value="الغازات">الغازات</option>
+        </select>
+
+        <button id="saveButton">حفظ</button>
+        <!-- <button id="deleteButton">حذف</button> -->
+<div id="tablesContainer"></div>
+
+    <script src="../client/addCure.js"></script>
+  </body>
+</html>
