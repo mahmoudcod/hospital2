@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cures Table</title>
+    <link rel="stylesheet" href="../style/home.css" />
+    <link rel="stylesheet" href="../style/addcure.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="addcure.html" id="inputSupplies">ادخال مستلزمات</a></li>
+          <li><a href="print.html" id="finishProcess">بدء العملية</a></li>
+          <li><a href="veiw.html" id="track">بحث</a></li>
+          <li><a href="logs.html" id="track">ادوية اليوم</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <button onclick=" window.print();" type="button">طباعة</button>
+      <input
+        type="text"
+        id="filterCureName"
+        placeholder="Search by Cure Name"
+      />
+      <input type="date" id="filterDate" />
+      <button onclick="filterByDate()">Filter</button>
+
+      <div class="display"></div>
+      <div id="trackingDataContainer"></div>
+    </div>
+    <script src="../client/html2canvas.js"></script>
+    <script src="../client/logs.js"></script>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+ body {
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     background-color: #f5f5f5;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+    background-image: url('../images/shutterstock_297132446.jpg');
+background-size: cover;
+        /* Adjust as needed */
+        background-position: center;
+        background-repeat: no-repeat;
+ }
+
+ h1 {
+     padding-top: 12px;
+     text-align: center;
+     color: rgb(255, 255, 255);
+ }
+
+ .inputcon {
+   display:flex;
+ }
+
+ form{
+    display: flex;
+    flex-direction: column;
+        max-width: 850px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.632);
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.554);
+        transition: transform 0.3s ease-in-out;
+ }
+
+ .right{
+    display: flex;
+flex-wrap: wrap;
+max-width: 43%;
+    padding-right:10px ;
+ }
+
+ .left{
+display: flex;
+    flex-wrap: wrap;
+    max-width: 45%;
+    padding-left: 10px;
+ }
+
+ .container:hover {
+     transform: scale(1.02);
+ }
+
+ label {
+     display: block;
+     margin-bottom: 8px;
+     color: #555;
+ }
+
+ input,
+ select {
+     width: 100%;
+     padding: 10px;
+     margin-bottom: 15px;
+     border: 1px solid #ddd;
+     border-radius: 4px;
+     box-sizing: border-box;
+     transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+ }
+
+ input:hover,
+ select:hover {
+     border-color: #333;
+ }
+
+ .devices {
+     display: flex;
+     margin-top: 15px;
+     justify-content: space-around;
+ }
+
+ .devices div {
+     justify-content: space-around;
+ }
+
+ button {
+     background-color: #333;
+     color: white;
+     padding: 10px 20px;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     font-size: 16px;
+     transition: background-color 0.3s ease-in-out;
+ }
+
+ button:hover {
+     background-color: #555;
+ }
+
+
+
+ td {
+     border: 1px solid #ddd;
+     padding: 10px;
+     text-align: center;
+ }
+
+ .selected {
+     background-color: #b3d9ff;
+     /* Light blue background for selected rows */
+ }
+
+ .hidden {
+     display: none;
+ }
+ table {
+     width: 100%;
+     margin: 2px;
+     height: fit-content;
+     border-collapse: collapse;
+     margin-top: 20px;
+ }
+ table th{
+    background-color: gray;
+    padding: 13px;
+ }
+#cureTablesContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
