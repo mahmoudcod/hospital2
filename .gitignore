@@ -1,0 +1,4 @@
+node_modules/
+hospital.db
+token.json
+.DS_Store

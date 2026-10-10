@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/veiw.css" />
+    <link rel="stylesheet" href="../style/home.css" />
+    <title>عرض البينات</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="addcure.html" id="inputSupplies">ادخال مستلزمات</a></li>
+          <li><a href="print.html" id="finishProcess">بدء العملية</a></li>
+          <li><a href="veiw.html" id="track">بحث</a></li>
+          <li><a href="logs.html" id="track">ادوية اليوم</a></li>
+        </ul>
+      </nav>
+    </header>
+    <input type="text" id="searchInput" placeholder="Search..." />
+    <label for="monthSelect">Select Month:</label>
+    <select id="monthSelect"></select>
+    <div id="trackingDataContainer"></div>
+
+    <script src="../client/veiw.js"></script>
+  </body>
+</html>

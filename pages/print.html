@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ادخال بيانات العميل</title>
+    <link rel="stylesheet" href="../style/traking.css" />
+    <link rel="stylesheet" href="../style/home.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="addcure.html" id="inputSupplies">ادخال مستلزمات</a></li>
+          <li><a href="print.html" id="finishProcess">بدء العملية</a></li>
+          <li><a href="veiw.html" id="track">بحث</a></li>
+          <li><a href="logs.html" id="track">ادوية اليوم</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1>ادخال بيانات العملية</h1>
+    <div class="container">
+      <form id="inputForm">
+        <div class="inputcon">
+          <div class="right">
+            <label for="doctorName">اسم الطبيب:</label>
+            <input
+              type="text"
+              id="doctorName"
+              name="doctorName"
+              placeholder="اسم الطبيب"
+              required
+            />
+
+            <label for="patientName">اسم المريض:</label>
+            <input
+              type="text"
+              id="patientName"
+              name="patientName"
+              placeholder="اسم المريض"
+              required
+            />
+
+            <label for="anesthesiaDoctor">طبيب التخدير :</label>
+            <input
+              type="text"
+              id="anesthesiaDoctor"
+              name="anesthesiaDoctor"
+              placeholder="طبيب التخدير"
+              required
+            />
+
+            <label for="nursing"> التمريض:</label>
+            <input
+              type="text"
+              id="nursing"
+              name="nursing"
+              placeholder="التمريض"
+              required
+            />
+          </div>
+
+          <div class="left">
+            <label for="ticketNumber"> رقم التذكرة :</label>
+            <input
+              type="text"
+              id="ticketNumber"
+              name="ticketNumber"
+              placeholder="رقم التذكرة"
+              required
+            />
+            <label for="operationTime">زمن العملية:</label>
+            <input
+              type="text"
+              id="operationTime"
+              name="operationTime"
+              placeholder="زمن العملية"
+              required
+            />
+            <label for="operationCategory">تصنيف العملية :</label>
+            <input
+              type="text"
+              id="operationCategory"
+              name="operationCategory"
+              placeholder="تصنيف العملية"
+              required
+            />
+
+            <label for="operationType">نوع العملية :</label>
+            <input
+              type="text"
+              id="operationType"
+              name="operationType"
+              placeholder="نوع العملية"
+              required
+            />
+
+            <label for="operationRoomNumber">رقم غرفة العمليات :</label>
+            <input
+              type="text"
+              id="operationRoomNumber"
+              name="operationRoomNumber"
+              placeholder="رقم غرفة العمليات"
+              required
+            />
+          </div>
+        </div>
+        <div class="devices">
+          <label for="devices">الأجهزة</label>
+          <div>
+            <input type="checkbox" id="suction" name="devices" value="شفاط" />
+            <label for="suction"> شفاط</label>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              id="lightSource"
+              name="devices"
+              value="مصدر الضوء"
+            />
+            <label for="lightSource">مصدر الضوء</label>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              id="dialyzer"
+              name="devices"
+              value="دياليرمي"
+            />
+            <label for="dialyzer">دياليرمي</label>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              id="monitor"
+              name="devices"
+              value="مونيتور"
+            />
+            <label for="monitor">مونيتور</label>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              id="ventilator"
+              name="devices"
+              value="فنتليتور"
+            />
+            <label for="ventilator">فنتليتور</label>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              id="endoscope"
+              name="devices"
+              value="مناظير"
+            />
+            <label for="endoscope">مناظير</label>
+          </div>
+        </div>
+        <div id="cureTablesContainer"></div>
+        <button type="submit" id="submitButton">print</button>
+      </form>
+    </div>
+    <script src="../client/data.js"></script>
+  </body>
+</html>
