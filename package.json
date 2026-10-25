@@ -11,7 +11,7 @@
   "author": "mahmoud",
   "license": "ISC",
   "dependencies": {
-    "electron": "^15.5.7",
+    "electron": "^42.11.16",
     "jsonwebtoken": "^9.0.2",
     "moment": "^2.29.4",
     "sqlite3": "^5.1.7"
